@@ -1,0 +1,162 @@
+
+.game-container, .complete-container, .fallback-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+	border: solid 1px #ccc;
+	padding: 20px;
+	width: 500px;
+}
+
+
+
+/* 게임 화면 */
+.game-container .top-wrap {
+	font-weight: bold;
+	font-size: 12px;
+}
+.game-container .top-wrap .time-wrap, .game-container .top-wrap .score-wrap {
+	display: inline-block;
+	width: 49.5%;
+	font-size: 15px;
+}
+
+
+.game-container .top-wrap .time-wrap {
+	text-align: left;
+}
+.game-container .top-wrap .time-wrap .time {}
+.game-container .top-wrap .score-wrap {
+	text-align: right;
+}
+.game-container .top-wrap .score-wrap .score {}
+
+
+.game-container .word-wrap {
+	margin-top: 30px;
+	text-align: center;
+}
+.game-container .word-wrap .word {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+
+.game-container .input-wrap {
+	margin-top: 40px;
+	text-align: center;
+}
+.game-container .input-wrap input {
+	background: #ccc;
+	border: none;
+	outline: none;
+	width: 200px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.game-container .input-wrap input:focus {
+	border: none;
+}
+
+
+.game-container .btn-wrap {
+	margin-top: 50px;
+	text-align: center;
+}
+.game-container .btn-wrap button {
+	background-color: #ccc;
+	border: none;
+	outline: none;
+	width: 130px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+.game-container .btn-wrap button:hover {
+	background-color: #aaa;
+}
+
+
+
+/* 완료 화면 */
+.complete-container {}
+
+.complete-container .top-wrap {
+	margin-top: 12px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.complete-container .score-wrap {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+
+.complete-container .avg-time-wrap {
+	margin-top: 44px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.complete-container .btn-wrap {
+	margin-top: 50px;
+	text-align: center;
+}
+.complete-container .btn-wrap button {
+	background-color: #ccc;
+	border: none;
+	outline: none;
+	width: 130px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+.complete-container .btn-wrap button:hover {
+	background-color: #aaa;
+}
+
+
+/* fallback 화면 */
+.fallback-container {
+	padding: 0;
+	height: 324px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fallback-container .msg-wrap {
+	margin-top: 110px;
+	font-size: 34px;
+}
+
+.fallback-container .btn-wrap {
+	margin-top: 20px;
+}
+
+.fallback-container .btn-wrap button {
+	background-color: #ccc;
+	border: none;
+	outline: none;
+	width: 130px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+
+
