@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: 'none',
+	mode: 'production',
 	entry: {
 		index: './src/index.js'
 	},
