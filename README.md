@@ -48,7 +48,8 @@
 - 페이지 URL의 pathname의 정보를 통해, 페이지 화면을 렌더링합니다.
 - 새로 고침이 발생했을 때, DOMContentLoaded 이벤트를 통해, 
 - 해당 메소드를 호출하고, 알맞는 페이지 화면으로 이동합니다. <br>
-- 엉뚱한 URL로 이동할 경우, fallback 화면을 렌더링합니다.
+- 엉뚱한 URL로 이동할 경우, fallback 화면을 렌더링합니다. <br>
+
 	- 단, 서버의 설정에서 fallback 처리를 index.js로 설정해야 합니다.
 	- 현 프로젝트의 webpack 로컬 서버의 설정은 fallback 처리가 index.js로 되어 있습니다.
 	
