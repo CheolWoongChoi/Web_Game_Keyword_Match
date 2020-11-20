@@ -8,15 +8,19 @@
   "license": "ISC",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "test": "jest --detectOpenHandles"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.3.1",
     "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"

@@ -10,6 +10,8 @@ const Complete = (function() {
 	function Complete() {
 		this.setCommonInstance = common => commonInstance = common;
 
+		this.getCommonInstance = () => commonInstance;
+
 		this.setReady = () => {
 			if (!history.state) {
 				alert('게임을 정상적으로 시작하세요!');

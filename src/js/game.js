@@ -1,8 +1,8 @@
 
-const Game = (function () {
-	const url = 'https://my-json-server.typicode.com/kakaopay-fe/resources/words'
+import { url } from '../js/constant';
 
-	let httpRequest = null; 
+const Game = (function () {
+	const requestUrl = url;
 	let commonInstance = null;
 
 	let $time = null;
@@ -22,35 +22,27 @@ const Game = (function () {
 
 	function Game() {
 		this.getData = () => {
-			httpRequest = new XMLHttpRequest();
+			return new Promise((resolve, reject) => {
+				const httpRequest = new XMLHttpRequest();
+				httpRequest.open('GET', requestUrl);
 
-			try {	
-				httpRequest.onreadystatechange = function () {
-					if (httpRequest.readyState === XMLHttpRequest.DONE) {
-						if (httpRequest.status === 200) {
-							words = JSON.parse(httpRequest.responseText);
-						} else {
-							alert('[ERROR] 데이터를 가져오는 데 실패했습니다.')
-						}
+				httpRequest.onload = () => {
+					if (httpRequest.status === 200) {
+						words = JSON.parse(httpRequest.responseText);
+						resolve(words);
+					} else {
+						reject(httpRequest.statusText);
 					}
 				}
-			} catch(e) {
-				alert(`[ERROR] 예외발생: ${e.description}`);
-			}
 
-			httpRequest.open('GET', url);
-			httpRequest.send();
-		}
+				httpRequest.onerror = () => reject(httpRequest.statusText);
+				httpRequest.send();
+			});			
+		};
+
+		this.getCommonInstance = () => commonInstance;
 
 		this.setCommonInstance = common => commonInstance = common;
-
-		this.setEvent = (callback) => {
-			$button = document.querySelector('#container .game-container button');
-			
-			$button.addEventListener('click', () =>	{
-				callback();
-			});
-		};
 
 		this.setReady = () => {
 			$time = document.querySelector('.game-container .time');
