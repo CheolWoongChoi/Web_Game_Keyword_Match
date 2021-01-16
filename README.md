@@ -7,6 +7,11 @@
 
 <br/>
 
+## 데모 사이트
+- https://test-95f8a.web.app/
+
+<br/>
+
 ## 프로젝트 명령어
 - 'npm install' - 패키지 설치 **(필수)**
 - 'npm start' - 로컬 개발 서버 실행
@@ -15,11 +20,9 @@
 
 <br/>
 
-## firebase 테스트 서버 주소
-- https://test-95f8a.web.app/
-- 배포 파일들이 잘 동작하는 지 테스트 서버에서 테스트를 진행했습니다.
-- firebase 서버에서는 404 처리가 되어 있지 않습니다.
-
+## 기술 스택
+- Vanila JavaScript
+- Webpack
 
 <br/>
 
