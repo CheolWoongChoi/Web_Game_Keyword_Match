@@ -49,44 +49,42 @@ export const views = {
 	`
 };
 
-export const url = 'https://my-json-server.typicode.com/kakaopay-fe/resources/words'
-
 export const sampleData = [
 	{
 		"second": 10,
-		"text": "hello"
+		"text": "hi"
 	},
 	{
 		"second": 10,
-		"text": "world"
+		"text": "welcome"
 	},
 	{
 		"second": 8,
-		"text": "this"
+		"text": "hello"
 	},
 	{
 		"second": 3,
-		"text": "is"
-	},
-	{
-		"second": 15,
-		"text": "kakaopay"
-	},
-	{
-		"second": 5,
-		"text": "we"
-	},
-	{
-		"second": 5,
-		"text": "are"
-	},
-	{
-		"second": 15,
-		"text": "kakaopay"
+		"text": "word"
 	},
 	{
 		"second": 15,
 		"text": "frontend"
+	},
+	{
+		"second": 5,
+		"text": "web"
+	},
+	{
+		"second": 5,
+		"text": "game"
+	},
+	{
+		"second": 15,
+		"text": "javascript"
+	},
+	{
+		"second": 15,
+		"text": "typescript"
 	},
 	{
 		"second": 20,
@@ -94,10 +92,12 @@ export const sampleData = [
 	},
 	{
 		"second": 15,
-		"text": "join"
+		"text": "thankyou"
 	},
 	{
 		"second": 10,
-		"text": "us"
+		"text": "goodjob"
 	}
 ];
+
+export const url = 'https://my-json-server.typicode.com/kakaopay-fe/resources/words'

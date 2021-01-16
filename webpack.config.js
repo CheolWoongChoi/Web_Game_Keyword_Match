@@ -12,7 +12,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name].js',
-		path: path.resolve(__dirname, 'public')
+		path: path.resolve(__dirname, 'build')
 	},
 	devServer: {
 		port: 8080,

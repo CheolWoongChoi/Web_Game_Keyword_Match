@@ -1,8 +1,7 @@
 
-import { url } from '../js/constant';
+import { sampleData } from '../js/constant';
 
 const Game = (function () {
-	const requestUrl = url;
 	let commonInstance = null;
 
 	let $time = null;
@@ -22,22 +21,7 @@ const Game = (function () {
 
 	function Game() {
 		this.getData = () => {
-			return new Promise((resolve, reject) => {
-				const httpRequest = new XMLHttpRequest();
-				httpRequest.open('GET', requestUrl);
-
-				httpRequest.onload = () => {
-					if (httpRequest.status === 200) {
-						words = JSON.parse(httpRequest.responseText);
-						resolve(words);
-					} else {
-						reject(httpRequest.statusText);
-					}
-				}
-
-				httpRequest.onerror = () => reject(httpRequest.statusText);
-				httpRequest.send();
-			});			
+			words = sampleData;
 		};
 
 		this.getCommonInstance = () => commonInstance;
